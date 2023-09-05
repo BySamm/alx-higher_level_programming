@@ -4,4 +4,3 @@ for number in range(0, 100):
         print(f"{number}")
     else:
         print(f"{number:02}", end=", ")
-

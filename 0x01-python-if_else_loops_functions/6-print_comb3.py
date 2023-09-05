@@ -5,4 +5,3 @@ for digit1 in range(0, 10):
             print(f"{digit1}{digit2}")
         else:
             print(f"{digit1}{digit2}", end=", ")
-
