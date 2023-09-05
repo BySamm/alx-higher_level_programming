@@ -2,25 +2,25 @@
 
 /**
  * check_cycle - checks if a singly linked list has a cycle in it.
- * @l: List to check
+ * @list: List to check
  *
  * Return: 0 or 1
  */
 
-int check_cycle(listint_t *l)
+int check_cycle(listint_t *list)
 {
-	listint_t *slow = l;
-	listint_t *fast = l;
+	listint_t *slo = list;
+	listint_t *fast = list;
 
-	if (!l)
+	if (!list)
 	{
 		return (0);
 	}
-	while (slow && fast && fast->next)
+	while (slo && fast && fast->next)
 	{
-		slow = slow->next;
+		slo = slo->next;
 		fast = fast->next->next;
-		if (slow == fast)
+		if (slo == fast)
 		{
 			return (1);
 		}
